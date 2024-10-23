@@ -1,2 +1,4 @@
 /target
 Cargo.lock
+/self_signed_certs/key.pem
+/self_signed_certs/cert.pem

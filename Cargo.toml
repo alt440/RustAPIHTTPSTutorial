@@ -4,7 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum = "0.6"
+axum = "0.7"
+axum-extra = "0.7"    # Match the version with axum
+axum-server = { version = "0.7.1", features = ["tls-rustls"] }
 tokio = { version = "1", features = ["full"] }
 tower = "0.4"
-tokio-rustls = "0.23"
+tokio-rustls = "0.23" #To run the TLS_RustLS main file
+http = "0.2"
