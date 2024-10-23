@@ -32,3 +32,9 @@ https://medium.com/@rrnazario/rust-how-to-fix-failed-to-run-custom-build-command
 Essentially, look at what stands below '---stderr' and it should give you indications on what to do. I have installed CMake and Visual Studio 2022, and have included 'Desktop development with C++' with my installation of Visual Studio. Now it works.
 
 4- Assuming that you might want to update the dependencies of the project (like I did), go to crates.io to figure out which version of your dependency matches with which version of some other dependency. As an example, here is axum-server: https://crates.io/crates/axum-server/0.7.1/dependencies . If you look for axum, you see it relates to axum version 0.7. I had strange errors because of conflicting imports.
+
+## How to test
+
+You will see the difference immediately. Go to the http URL, and you will be redirected to HTTPS (the output 'Hello, world!' will appear).
+
+Also, if you access the HTTPS URL with HTTP (see main.rs comment at top of file), the response 'Hello, world!' will appear gibberish due to encryption!

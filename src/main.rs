@@ -4,6 +4,13 @@ Reference : https://docs.rs/axum-server/latest/src/http_and_https/http_and_https
 IMPORTANT: This code will require you to install CMake (because of the tls_rustls dependency),
 and you will have issues while running it if you do not have Visual Studio installed.
 (as indicated from the trace when I do 'cargo run', under --stderr)
+
+HTTP URL: http://127.0.0.1:3000
+HTTPS URL: https://127.0.0.1:3443
+
+You immediately notice that the HTTPS URL is served in HTTPS, as Firefox warns you about the website's security.
+Also, if you take the same address and port and try to access it via HTTP (http://127.0.0.1:3443), you receive 
+weird symbols as output because the data is encrypted!
 */
 
 use axum::{http::uri::Uri, response::Redirect, routing::get, Router};
