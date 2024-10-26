@@ -2,8 +2,7 @@
 Rust API tutorial where we also use HTTPS to protect against MITM attacks
 
 ## Reference
-Reference : https://github.com/tokio-rs/axum/tree/main/examples/tls-rustls
-Credits to Jonas Platte for much of the code
+Reference : https://docs.rs/axum-server/latest/src/http_and_https/http_and_https.rs.html#48
 
 ## Important notes
 1- I generated my self-signed certificates using: 
